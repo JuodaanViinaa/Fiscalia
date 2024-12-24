@@ -1,0 +1,47 @@
+Tareas recurrentes.
+
+Diario: 
+	Informe ejecutivo
+	Concentrado de audiencias
+
+Todos los lunes:
+	Gráficas de violación
+	Gráficas de Delitos Contra la Intimidad
+
+Martes:
+	Informes de Victimas / trazabilidad de imputados / informe binario
+		Se encuentra en General/Estadistica 2024/INFORME BINARIO 2024/
+		El Lic Jesús Espinoza envía un formato en Excel que tiene las carpetas de cada fiscalía
+		El formato debe enviarse a cada encargado de fiscalía para que llene con 0 y 1 las columnas pertinentes, luego se condensa en un solo archivo y se envía de vuelta
+		Quizá se envía con mayor frecuencia que solo los martes, pero no estoy seguro
+
+Fin de mes:
+	Oficio - Actualización de medidas cautelares/órdenes de protección
+		La solicitud llega mediante un oficio a fin de mes
+		Podría ser el formato en General/Estadística 2024/INFORME MEDIDAS DE PROTECCION 2024/AGOSTO 2024/
+		Hay una versión más reciente en Archivo/INFORMES VIERNES A/INFORME MEDIDAS DE PROTECCION 2024/.../INFORMACIÓN MEDIDAS DE PROTECCIÓN AL 17 DE OCTUBRE DE 2024.xlsx
+		Se reportan conteos de medidas de protección del artículo 137 del Código Nacional de Procedimientos Penales.
+		Parece que se llena con los informes diarios de medidas y con el informe ejecutivo diario. Además se puede solicitar a cada fiscalía que provea sus conteos.
+	Informe de productividades
+		Se hace un ppt con gráficas de las productividades de cada fiscalía. 
+
+Mediados del mes siguiente:
+	Oficio - Anexo estadístico
+		Se encuentra en Archivo/ANEXO ESTADISTICO 2024/
+		Cuadro 17 - Informa: CETNN; Refugio Especializado para Mujeres, Niñas y Niños Víctimas del Delito de Trata de Personas
+		Cuadro 18 - Informa: CJM
+		Cuadro 19 - Informa: Feminicidio
+		Cuadro 20 - Informa: FIDVF; FIDAGAP
+		Cuadro 21 - Informa: FIDS
+		Cuadro 23 - Informa:
+				FEIDF: Homicidio doloso, Feminicidio
+				Trata (FIDMTP): Trata de personas
+				FJPA: Todo
+				FIDAGAP: Lesiones dolosas
+				FIDS: Delitos sexuales
+		Se entrega un oficio y un CD en el 5o piso del Bunker, al ingeniero Oscar Martínez Vázquez. Se envía por correo a jorge_oliveros@fgjcdmx.gob.mx
+
+Trimestral (Cortes al 31 de Marzo, 30 de Junio, 30 de Septiembre, 31 de Diciembre)
+	Oficio - "MES": Actualización de diez indicadores estratégicos del modelo de evaluación y seguimiento de la consolidación del sistema de justicia penal.
+		Se actualiza con un formato llenado por cada fiscalía encontrado en el Teams en Archivo/MES 2024. Hay un instructivo en pdf dentro de MES CGIDGAV 2024 2T
+

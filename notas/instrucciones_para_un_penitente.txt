@@ -1,0 +1,57 @@
+La fiscalía es incertidumbre. Si te sientes perdido, empatizo contigo porque también yo me siento así.
+Para saber qué hacer tienes que preguntar todo a todo mundo y tomar nota.
+Pide a Alberto que te una al chat de Enlace de estadísticos para tener acceso a los informes que produce cada fiscalía.
+
+Hay varias fiscalías que son observadas por la coordinación. Sus siglas son:
+	FIDS: Fiscalía Central de Investigación para la Atención de Delitos  Sexuales
+        FIDCANNA: Fiscalía de Investigación de Delitos Cometidos en Agravio de Niños, Niñas y Adolescentes
+        FEIDF: Fiscalía  Especializada para la Investigación del Delito de Feminicidio
+        FIDMTP: Fiscalía Central de Investigación para la Atención del Delito de Trata de Personas
+        FIDVF: Fiscalía de Investigacion del delito de Violencia Familiar
+        FIDAGAP: Fiscalía de Investigación de Delitos Cometidos en Agravio de Grupos de Atención Prioritaria
+        FJPA: Fiscalía de Justicia Para Adolescentes
+
+Además de las fiscalías hay otros órganos:
+	CETNN: Centro de Estancia Transitoria para Niñas y Niños
+	Refugio Especializado para Mujeres, Niñas y Niños Víctimas del Delito de Trata de Personas
+
+Existen labores recurrentes que hay que hacer en fechas específicas. De las que tengo registro hasta ahora son:
+Diarias:
+	Informe ejecutivo, condensado de audiencias, y envío
+		Llegan datos por correo a la dirección de estadistica.cgidgav@gmail.com (administrada por Alberto)
+		Alberto los reenvía al encargado o los sube directamente al Teams de la unidad.
+		Tu labor es ordenar todos los archivos (son alrededor de 22 cada día) en carpetas (Audiencias, Informe diario, Cateos, Medidas de protección, y Otros). Se puede hacer con base en su nombre.
+		Las audiencias se condensan todas en un solo archivo que se ordena por fecha.
+		El informe ejecutivo se realiza agregando los totales de todos los archivos que digan "informe ejecutivo".
+		Con los demás archivos no hay que hacer nada más que meterlos en su carpeta.
+		Para el informe ejecutivo existe un macro, creado por Citlali, que reduce la labor de cerca de una hora a unos 15 minutos.
+		Existe otra opción que utiliza Python y reduce el tiempo a quizá 5 minutos. Ordena automáticamente y hace los condensados.
+		El instructivo para usar la automatización de Python estará en un archivo distinto en esta misma carpeta.
+		Después de hacer el condensado hay que subirlo a Teams en la carpeta de "Informes" y enviarlo por correo a informesdgpec@gmail.com.
+Semanales:
+	Lunes:
+		Reporte de productividades de violación
+			Alberto te hace llegar un archivo que contiene conteos de determinaciones de carpetas del delito de violación
+			Tu labor es crear 4 gráficas para mostrar la productividad de cada área.
+		Reporte de productividades de delitos contra la intimidad
+			Exactamente lo mismo que en violación, pero para un delito distinto.
+Mensuales:
+	Fin de mes:
+		Actualización de medidas cautelares/órdenes de aprehensión
+			La solicitud llega mediante un oficio a finales del mes.
+	Mediados de mes:
+		Anexo estadístico (actualizar cuadros del mes anterior)
+			Mediante un oficio se pide actualizar la información de varios cuadros (17, 18, 19, 20, 21, y 23), pero no se te dice cómo, cuáles cuadros son esos, qué formato tienen, o de dónde sacar la información.
+			El archivo a actualizar está dentro de Teams, en una carpeta con un nombre como "Anexo estadístico 2024".
+			Dentro habrá un excel con hojas nombradas como los cuadros que se piden.
+			Cada cuadro pide información específica que no tienes, ni tampoco tienes un modo fácil de deducirla o calcularla.
+			La información debe pedirse a los encargados de cada fiscalía mediante el chat de Enlace estadístico.
+			Aquí está una idea de cómo puedes pedirla:
+			"Hola. Buenas tardes a todas y todos.
+			Estamos atendiendo un oficio enviado por la Maestra Sayuri para actualizar los datos de los cuadros 17 (atención a víctimas), 18 (CJM), 19 (productividad de la FIDF), 20 (resultados de la FIDVF), 21 (resultados de la FIDS), y 23 (carpetas de investigación, personas judicializadas y vinculadas a proceso según tipo de delito), hasta el 31 de octubre.
+			Les pedimos que nos apoyen con el llenado de las filas correspondientes para cada área. Les envío en un momento el formato.
+			El cuadro 17 le corresponde a CETNN y Refugio para mujeres, niñas y niños víctimas de trata; el 18 a CJM; el 19 a Feminicidio; el 20 a Violencia Familiar y FIDAGAP; el 21 a FIDS; y el 23 a Feminicidio, Trata, FJPA, FIDAGAP, y FIDS.
+			En un momento envío el formato para su llenado. Muchas gracias de antemano."
+			Y les envías el formato de la carpeta de Anexo Estadístico. Cada encargado te devolverá el archivo con las filas que le corresponden ya llenadas.
+			Algunas filas le corresponden a más de un área, por lo que hay que sumarlas antes de escribir en el archivo final.
+			
