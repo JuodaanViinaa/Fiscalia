@@ -16,7 +16,7 @@ plt.rcParams.update({'font.size': 12,
                      'font.family': 'Metropolis'})
 
 path = "/home/daniel/PycharmProjects/Fiscalia/InformeDCIS/"
-file = "/home/daniel/PycharmProjects/Fiscalia/InformeDCIS/INFORMACIÓN CIS al 12 Diciembre 2024.xlsx"
+file = "/home/daniel/PycharmProjects/Fiscalia/InformeDCIS/INFORMACIÓN CIS al 26 Diciembre 2024 ok.xlsx"
 datos = pd.read_excel(file, skiprows=1)
 datos["AÑO"] = datos.iloc[:, 0].ffill().astype(int).astype(str)
 
