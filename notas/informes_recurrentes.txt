@@ -44,4 +44,5 @@ Mediados del mes siguiente:
 Trimestral (Cortes al 31 de Marzo, 30 de Junio, 30 de Septiembre, 31 de Diciembre)
 	Oficio - "MES": Actualización de diez indicadores estratégicos del modelo de evaluación y seguimiento de la consolidación del sistema de justicia penal.
 		Se actualiza con un formato llenado por cada fiscalía encontrado en el Teams en Archivo/MES 2024. Hay un instructivo en pdf dentro de MES CGIDGAV 2024 2T
+		Las bases de datos para el trimestre de octubre-diciembre del año anterior están en el Teams, en Archivo/CARPETA MONI/ARCHIVOS ESTADISTICA 2023/INFORME (MES) AL 31 DE DICIEMBRE 2023
 
