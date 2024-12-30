@@ -9,11 +9,14 @@ Hay varias fiscalías que son observadas por la coordinación. Sus siglas son:
         FIDMTP: Fiscalía Central de Investigación para la Atención del Delito de Trata de Personas
         FIDVF: Fiscalía de Investigacion del delito de Violencia Familiar
         FIDAGAP: Fiscalía de Investigación de Delitos Cometidos en Agravio de Grupos de Atención Prioritaria
-        FJPA: Fiscalía de Justicia Para Adolescentes
+        FJPA: Fiscalía de Justicia Penal para Adolescentes
+
+	Por el momento la FEIDF no tiene un estadístico a cargo, por lo que es difícil acceder a sus datos.
 
 Además de las fiscalías hay otros órganos:
+	CJM: Centros de Justicia para Mujeres
 	CETNN: Centro de Estancia Transitoria para Niñas y Niños
-	Refugio Especializado para Mujeres, Niñas y Niños Víctimas del Delito de Trata de Personas
+	REMNNVDTP: Refugio Especializado para Mujeres, Niñas y Niños Víctimas del Delito de Trata de Personas
 
 Existen labores recurrentes que hay que hacer en fechas específicas. De las que tengo registro hasta ahora son:
 Diarias:
@@ -23,8 +26,9 @@ Diarias:
 		Tu labor es ordenar todos los archivos (son alrededor de 22 cada día) en carpetas (Audiencias, Informe diario, Cateos, Medidas de protección, y Otros). Se puede hacer con base en su nombre.
 		Las audiencias se condensan todas en un solo archivo que se ordena por fecha.
 		El informe ejecutivo se realiza agregando los totales de todos los archivos que digan "informe ejecutivo".
-		Con los demás archivos no hay que hacer nada más que meterlos en su carpeta.
-		Para el informe ejecutivo existe un macro, creado por Citlali, que reduce la labor de cerca de una hora a unos 15 minutos.
+		Los demás archivos solo hay que meterlos en su carpeta.
+		Al final todo se sube a Teams, en la sección de Informes, en una carpeta que lleve por nombre la fecha en formato aaaammdd, e.g., 20241230 para el 30 de diciembre de 2024.
+		Para el informe ejecutivo existe un macro, creado por Citlali, que reduce la labor a unos 15 minutos.
 		Existe otra opción que utiliza Python y reduce el tiempo a quizá 5 minutos. Ordena automáticamente y hace los condensados.
 		El instructivo para usar la automatización de Python estará en un archivo distinto en esta misma carpeta.
 		Después de hacer el condensado hay que subirlo a Teams en la carpeta de "Informes" y enviarlo por correo a informesdgpec@gmail.com.

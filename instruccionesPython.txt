@@ -1,0 +1,68 @@
+Para utilizar la automatización de Python se requiere como requisito:
+    1. Instalar python en la computadora que se utilizará
+    2. Instalar las librerías adecuadas
+    3. Tener los archivos del código descargados
+    4. Tener los archivos por analizar en una carpeta que lleve por nombre la fecha del día en formato aaaammdd, e.g., 20241230
+    5. Adaptar la ruta de los archivos en el código
+
+1 - Instalar Python
+Python se puede descargar desde el sitio de python.org
+Para facilitar el trabajo recomiendo descargar un editor específico para python llamado Pycharm Community Edition.
+    Tras instalar Pycharm y abrirlo se nos presenta una pantalla que pide crear un nuevo proyecto o abrir uno existente. Seleccionaremos la opción de crear uno nuevo.
+    Le asignaremos el nombre que sea, y en las opciones dejaremos la que viene por defecto que dice "Project venv" y haremos clic en "crear".
+    Con eso se creará una carpeta llamada PycharmProjects en el sistema, y dentro de ella una segunda carpeta con el nombre de nuestro proyecto recién creado.
+    
+2 - Instalar las librerías adecuadas
+Las librerías necesarias son pandas, Numpy, Openpyxl, matplotlib, y python-pptx.
+Para instalarlas desde Pycharm podemos ir a la parte inferior izquierda de la pantalla y buscar un icono que parecen tres cuadros apilados. Al flotar sobre él con el mouse debería mostrar el texto "Paquetes" o "Packages". Si hacemos clic en él abrirá un cuadro en el que podemos buscar librerías por nombre. Buscaremos cada una de las librerías mencionadas e instalaremos la versión más reciente de ellas.
+
+3 - Conseguir el código
+El código necesario está en el Teams, en la sección de Informes, en una carpeta llamada "AutomatizacionesPython". Para importarlo al proyecto solamente hay que copiar las tres carpetas que contiene (las carpetas completas, no los archivos individuales) hacia la carpeta en donde está guardado el proyecto de Pycharm.
+
+4 - Conseguir los archivos para analizar
+Los archivos llegan diariamente por la tarde/noche (lo más tarde que han llegado para mí ha sido incluso después de las 9 pm) por correo a estadistica.cgidgav@gmail.com
+Probablemente tendrás acceso a la cuenta de correo, o Alberto te reenviará los archivos.
+La manera más eficiente que encontré de obtenerlos es con Power Automate. Puedes crear una regla en gmail para reenviar todos los correos recibidos a una dirección distinta, y luego crear un flujo simple de Power Automate que te permita descargar todos los archivos adjuntos de los correos sin leer y pegarlos en una carpeta de One Drive. Así, para obtener los archivos necesitas solo descargar un único archivo .zip desde One Drive y no 22 archivos desde 10 correos distintos en gmail.
+Una vez que tengas todos los archivos del día (yo hago un corte a las 8:30 pm y solo incluyo en el informe lo que llegue antes de esa hora) los debes meter todos en una carpeta que lleve por nombre la fecha en formato aaaammdd, y esa carpeta completa debes meterla en la carpeta donde está el proyecto de Pycharm, en la subcarpeta de InformeEjecutivo.
+
+5 - Adaptar la ruta de los archivos
+En Pycharm puedes abrir los archivos con formato .py que descargaste en el paso número 3. Ese es el código de las automatizaciones.
+Hay tres carpetas: InformeEjecutivo, InformeViolaciones, e Informe DCIS. En los tres casos hay que hace un cambio menor para que las direcciones donde el código buscará los archivos reflejen las condiciones reales de tu computadora.
+Informe ejecutivo:
+
+    En el caso del informe ejecutivo basta con cambiar la ruta de la variable llamada "path". Para obtener su valor abre el explorador de windows y navega hasta la carpeta del proyecto de Pycharm y la subcarpeta de InformeEjecutivo. Copia la dirección de la barra de direcciones (debe resultar algo como "C:\Users\Tu_nombre\PycharmProyects\Tu_Proyecto\InformeEjecutivo\") y sustituye con ella lo que está en la variable "path". Asegúrate de dejar las comillas, sustituye todas las diagonales hacia atrás ("\") con diagonales hacia adelante ("/"), y asegúrate de que al final de la ruta dejas también una diagonal hacia adelante.
+
+    Al final, en la carpeta del proyecto te deben quedar tres carpetas, y en la carpeta de InformeEjecutivo debe quedar una carpeta con el nombre de la fecha del día, 5 archivos de python, y dos archivos de excel. Los archivos de excel (Formato_audiencias y Formato_informe) son los formatos vacíos para llenar con los datos de cada fiscalía.
+
+    Una vez que todo esté en su lugar, da clic en el botón de la flecha verde en la parte superior de la pantalla asegurándote de que a su lado indique que se correrá el archivo actual.
+    Si todo está bien, se correrá el código. En la parte inferior te indicará su progreso a velocidad turbo. Te dirá qué fiscalías no enviaron un archivo para el informe ejecutivo, y te dirá qué se está corriendo en cada momento.
+
+    Al finalizar revisa la carpeta con nombre de fecha y deberías encontrar que todos los archivos están organizados por carpetas.
+    En la carpeta de Informe diario estarán los archivos del informe ejecutivo renombrados para ser más accesibles. El archivo llamado "[FECHA] INFORME EJECUTIVO DIARIO CGIDGAV" es el condensado del informe.
+    En la carpeta de Audiencias estarán los archivos pertinentes, y el llamado "[FECHA] Audiencias" es el condensado.
+    Esos dos archivos condensados son los que se deben enviar a la UET desde el correo de estadistica.cgidgav@gmail.com.
+
+    La carpeta completa con nombre de fecha debe subirse al Teams en la sección de informes.
+
+InformeViolaciones e InformeDCIS:
+
+    Para violaciones y DCIS Alberto (o el Ingeniero Sergio de la fiscalía de delitos sexuales) te enviarán dos archivos con conteos mensuales de productividades de violación y delitos contra la intimidad sexual.
+    Con esos datos hay que hacer cálculos para mostrar gráficas con los inicios y radicaciones con detenido y sin detenido, y con las órdenes de aprehensión solicitadas, concedidas y cumplidas. Esos cálculos seguramente los explicará Alberto y recomiendo que los hagas manualmente al menos una vez.
+    Los códigos de Python te dejan automatizar esos cálculos y hacer la presentación necesaria en unos segundos.
+    Para usarlos debes copiar a cada carpeta (InformeViolaciones e InformeDCIS) el archivo correspondiente de excel, y después editar en el código la ruta que lleva a ese archivo. Está en las variables de "path" y "file" en el archivo de "crear_graficos_****.py". Edita ambas para reflejar la ruta de tu computadora que lleva a tu proyecto y la carpeta del informe correspondiente, y al archivo de excel correspondiente también.
+    Después, edita la ruta también en el archivo de "crear_presentacion_****.py".
+    Después corre ambos códigos: primero el de crear_gráficos, y después el de crear_presentación.
+    Como resultado, en la misma carpeta se deberían crear 4 imágenes .png y un archivo de powerpoint. Revisa el archivo de power point y edita el título en la primera diapositiva para reflejar la fecha real de los datos.
+
+    Los dos archivos resultantes de ppt tenlos a la mano, porque los lunes los pedirá ya sea Alberto, el Lic Eduardo Pompa, u otra persona que vaya en persona a pedirte una impresión de ellos.
+
+
+Fallos comunes:
+
+He hecho el mejor trabajo que he podido con estas automatizaciones, pero solo funcionan en tanto los archivos que nos envían sean consistentes.
+A veces los encargados de cada fiscalía hacen cosas raras que pueden hacer que el código falle. Te dejo las que he identificado:
+    Lo primero es que la FEIDF casi nunca envía un reporte, por lo que no debes alarmarte si ves que no está en los archivos o si python te reporta que no se encontró el archivo.
+    Muy ocasionalmente envían los archivos desde una dirección de correo distinta de la usual, y gmail los puede detectar como spam. Si sospechas que te faltan archivos, revisa la carpeta de spam.
+    En cuanto al informe ejecutivo, si el código comienza a correr pero se detiene a la mitad, revisa lo que está escrito en la consola de resultados. Ahí te indica hasta qué punto del análisis llegó y en qué punto falló. Un fallo que ha sucedido es que, al llegar al archivo de alguna Fiscalía en particular, el análisis falla porque no se encuentra la columna adecuada. Lo que puede estar sucediendo es que le hayan cambiado el nombre a la columna (por ejemplo, en lugar de "TOTAL" pueden ponerle otro nombre por accidente).
+
+    Sobre los informes de violaciones y DCIS, revisa que se estén analizando los datos del mes correcto. El código lee las filas desde abajo hacia arriba tomando los últimos 13 meses y saltándose 1 fila para Violación y 2 filas para DCIS (porque en los archivos hay 1 y 2 filas vacías al final de los datos). Si acaso eso llega a cambiar, habrá que modificar el código. No ha sucedido nunca, pero es bueno estar alerta y revisar siempre.

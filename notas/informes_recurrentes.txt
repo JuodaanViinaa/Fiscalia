@@ -2,32 +2,48 @@ Tareas recurrentes.
 
 Diario: 
 	Informe ejecutivo
+		Se hace un concentrado de todos los archivos enviados diariamente al correo de estadistica.cgidgav@gmail.com que lleven por título "informe ejecutivo" o algo similar.
+		Se toman los totales de cada hoja de cada archivo y se condensa en un único excel que luego se envía a la UET.
+		Se puede realizar de tres formas:
+			- Manualmente, copiando y pegando de cada excel en el archivo correspondiente. Llevaría algo más de media hora.
+			- Con un macro hecho por Citlali. El macro está en el Teams, en la sección de informes. El macro tiene botones que permiten elegir el archivo de cada fiscalía y hace el copiado y pegado de forma rápida. Lleva quizá unos 15 a 20 minutos.
+			- Con un código de Python que dejaré también en la sección de informes de Teams. Lleva unos 5 minutos por la revisión necesaria al final.
 	Concentrado de audiencias
+		Sucede lo mismo que en el informe ejecutivo, pero con los archivos que digan "audiencias".
+		Se copian todas las filas de la hoja de "Audiencias Acumuladas" de cada archivo hacia un archivo concentrado y se separan por fecha.
+		Manualmente toma unos 5 minutos. Con el código de Python lleva unos segundos solamente.
 
 Todos los lunes:
 	Gráficas de violación
 	Gráficas de Delitos Contra la Intimidad
+		Ambas gráficas se hacen con Python en automático, o de manera manual con Excel. Las instrucciones de Python están en un archivo separado.
 
 Martes:
 	Informes de Victimas / trazabilidad de imputados / informe binario
-		Se encuentra en General/Estadistica 2024/INFORME BINARIO 2024/
+		Se almacenan en General/Estadistica 2024/INFORME BINARIO 2024/
 		El Lic Jesús Espinoza envía un formato en Excel que tiene las carpetas de cada fiscalía
 		El formato debe enviarse a cada encargado de fiscalía para que llene con 0 y 1 las columnas pertinentes, luego se condensa en un solo archivo y se envía de vuelta
-		Quizá se envía con mayor frecuencia que solo los martes, pero no estoy seguro
+		Dice el Lic Jesús que en realidad debería enviárnoslo tres veces por semana, pero dado que somos lentos para responder solo lo hace una vez.
 
 Fin de mes:
 	Oficio - Actualización de medidas cautelares/órdenes de protección
 		La solicitud llega mediante un oficio a fin de mes
-		Podría ser el formato en General/Estadística 2024/INFORME MEDIDAS DE PROTECCION 2024/AGOSTO 2024/
-		Hay una versión más reciente en Archivo/INFORMES VIERNES A/INFORME MEDIDAS DE PROTECCION 2024/.../INFORMACIÓN MEDIDAS DE PROTECCIÓN AL 17 DE OCTUBRE DE 2024.xlsx
+		Parece ser el formato en General/Estadística 2024/INFORME MEDIDAS DE PROTECCION 2024/***** 2024/
+		Hay una versión más reciente en Archivo/INFORMES VIERNES A/INFORME MEDIDAS DE PROTECCION 2024/.../INFORMACIÓN MEDIDAS DE PROTECCIÓN AL 31 DE OCTUBRE DE 2024.xlsx
 		Se reportan conteos de medidas de protección del artículo 137 del Código Nacional de Procedimientos Penales.
 		Parece que se llena con los informes diarios de medidas y con el informe ejecutivo diario. Además se puede solicitar a cada fiscalía que provea sus conteos.
 	Informe de productividades
 		Se hace un ppt con gráficas de las productividades de cada fiscalía. 
+		Los informes previos se encuentran en Teams, en la sección de Archivo/INFORMES PRODUCTIVIDAD.
+		Para llenarlo se envía el formato de productividad a los encargados de cada fiscalía, y ellos llenan los datos para el mes en cuestión.
+		Todo se vacía en un archivo general de productividades del que después se hacen reportes en ppt.
+		Son dos reportes: uno de productividades por fiscalía, y otro de productividad y cargas de trabajo. Ambos se encuentran en la misma carpeta de Teams, y solamente hay que actualizar con los datos del mes siguiente.
 
 Mediados del mes siguiente:
 	Oficio - Anexo estadístico
-		Se encuentra en Archivo/ANEXO ESTADISTICO 2024/
+		La solicitud llega a mediados del mes siguiente. Se pide actualizar la información de seis cuadros.
+		La manera de llenarlo es pidiendo ayuda a cada Fiscalía: el último archivo enviado se hace llegar a los encargados de cada fiscalía mediante el chat de whatsapp, y cada uno se encarga de llenar las columnas pertinentes. Se encuentra en el Teams en Archivo/ANEXO ESTADISTICO 2024/
+		La distribución de cuadros a cada Fiscalía es la siguiente:
 		Cuadro 17 - Informa: CETNN; Refugio Especializado para Mujeres, Niñas y Niños Víctimas del Delito de Trata de Personas
 		Cuadro 18 - Informa: CJM
 		Cuadro 19 - Informa: Feminicidio
