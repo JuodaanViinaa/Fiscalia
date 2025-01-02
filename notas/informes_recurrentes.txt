@@ -20,8 +20,7 @@ Todos los lunes:
 
 Martes:
 	Informes de Victimas / trazabilidad de imputados / informe binario
-		Se almacenan en General/Estadistica 2024/INFORME BINARIO 2024/
-		El Lic Jesús Espinoza envía un formato en Excel que tiene las carpetas de cada fiscalía
+		El Lic Jesús Espinoza envía un formato en Excel que tiene las carpetas de cada fiscalía separadas en una hoja por cada fiscalía
 		El formato debe enviarse a cada encargado de fiscalía para que llene con 0 y 1 las columnas pertinentes, luego se condensa en un solo archivo y se envía de vuelta
 		Dice el Lic Jesús que en realidad debería enviárnoslo tres veces por semana, pero dado que somos lentos para responder solo lo hace una vez.
 
@@ -29,9 +28,11 @@ Fin de mes:
 	Oficio - Actualización de medidas cautelares/órdenes de protección
 		La solicitud llega mediante un oficio a fin de mes
 		Parece ser el formato en General/Estadística 2024/INFORME MEDIDAS DE PROTECCION 2024/***** 2024/
-		Hay una versión más reciente en Archivo/INFORMES VIERNES A/INFORME MEDIDAS DE PROTECCION 2024/.../INFORMACIÓN MEDIDAS DE PROTECCIÓN AL 31 DE OCTUBRE DE 2024.xlsx
+		Hay una versión más reciente en Archivo/INFORMES VIERNES A/INFORME MEDIDAS DE PROTECCION 2024/.../INFORMACIÓN MEDIDAS DE PROTECCIÓN AL *************.xlsx
 		Se reportan conteos de medidas de protección del artículo 137 del Código Nacional de Procedimientos Penales.
-		Parece que se llena con los informes diarios de medidas y con el informe ejecutivo diario. Además se puede solicitar a cada fiscalía que provea sus conteos.
+		Parece que se llena con los informes diarios de medidas y con el informe ejecutivo diario. Además se puede solicitar a cada fiscalía que provea sus conteos, porque a menudo hay diferencias entre lo que reportan diariamente y el conteo de fin de mes. Éste último parece ser el conteo más confiable.
+
+		Con los datos actualizados se hacen gráficas (ya vienen construidas también en el excel, entonces solo hay que actualizarlas), que se condensan en un ppt (está en la misma carpeta la versión previa, solo hay que actualizarla), y se entrega a la UET.
 	Informe de productividades
 		Se hace un ppt con gráficas de las productividades de cada fiscalía. 
 		Los informes previos se encuentran en Teams, en la sección de Archivo/INFORMES PRODUCTIVIDAD.
@@ -42,7 +43,7 @@ Fin de mes:
 Mediados del mes siguiente:
 	Oficio - Anexo estadístico
 		La solicitud llega a mediados del mes siguiente. Se pide actualizar la información de seis cuadros.
-		La manera de llenarlo es pidiendo ayuda a cada Fiscalía: el último archivo enviado se hace llegar a los encargados de cada fiscalía mediante el chat de whatsapp, y cada uno se encarga de llenar las columnas pertinentes. Se encuentra en el Teams en Archivo/ANEXO ESTADISTICO 2024/
+		La manera de llenarlo es pidiendo ayuda a cada Fiscalía: el archivo del mes anterior se hace llegar a los encargados de cada fiscalía mediante el chat de whatsapp, y cada uno se encarga de llenar las columnas pertinentes. Se encuentra en el Teams en Archivo/ANEXO ESTADISTICO 2024/
 		La distribución de cuadros a cada Fiscalía es la siguiente:
 		Cuadro 17 - Informa: CETNN; Refugio Especializado para Mujeres, Niñas y Niños Víctimas del Delito de Trata de Personas
 		Cuadro 18 - Informa: CJM

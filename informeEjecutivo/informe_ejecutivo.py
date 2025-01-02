@@ -227,22 +227,25 @@ def informe_ejecutivo(dir_path, template):
         summ_wb.save(f'{dir_path}{datetime.datetime.now().strftime("%Y%m%d")} INFORME EJECUTIVO DIARIO CGIDGAV.xlsx')
 
     # CJM
-    cjm_wb = load_workbook(f'{dir_path}{file_dict["CJM"]}', data_only=True)
-    values1 = []
-    for row in range(4, 15):
-        for col in ["C", "D", "E", "F", "G"]:
-            values1.append(cjm_wb.active[f'{col}{row}'].value)
-    for row in range(4, 15):
-        for col in ["B", "C", "D", "E", "F"]:
-            summ_wb["CJM"][f'{col}{row}'].value = values1.pop(0)
-    values2 = []
-    for row in range(19, 29):
-        for col in ["C", "D", "E", "F", "G"]:
-            values2.append(cjm_wb.active[f'{col}{row}'].value)
-    for row in range(19, 29):
-        for col in ["B", "C", "D", "E", "F"]:
-            summ_wb["CJM"][f'{col}{row}'].value = values2.pop(0)
-    print("CJM Terminado")
+    try:
+        cjm_wb = load_workbook(f'{dir_path}{file_dict["CJM"]}', data_only=True)
+        values1 = []
+        for row in range(4, 15):
+            for col in ["C", "D", "E", "F", "G"]:
+                values1.append(cjm_wb.active[f'{col}{row}'].value)
+        for row in range(4, 15):
+            for col in ["B", "C", "D", "E", "F"]:
+                summ_wb["CJM"][f'{col}{row}'].value = values1.pop(0)
+        values2 = []
+        for row in range(19, 29):
+            for col in ["C", "D", "E", "F", "G"]:
+                values2.append(cjm_wb.active[f'{col}{row}'].value)
+        for row in range(19, 29):
+            for col in ["B", "C", "D", "E", "F"]:
+                summ_wb["CJM"][f'{col}{row}'].value = values2.pop(0)
+        print("CJM Terminado")
+    except:
+        print("CJM no encontrado")
 
     # Los archivos se renombran con un nombre más fácil e informativo
     for name, file in file_dict.items():
