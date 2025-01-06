@@ -19,14 +19,14 @@ Todos los lunes:
 		Ambas gráficas se hacen con Python en automático, o de manera manual con Excel. Las instrucciones de Python están en un archivo separado.
 
 Martes:
-	Informes de Victimas / trazabilidad de imputados / informe binario
-		El Lic Jesús Espinoza envía un formato en Excel que tiene las carpetas de cada fiscalía separadas en una hoja por cada fiscalía
+	Informes de Victimas / trazabilidad de imputados / informe binario / B1NAR10
+		El Lic Jesús Espinoza envía un formato en Excel que tiene las carpetas de cada fiscalía separadas en una hoja por cada fiscalía.
 		El formato debe enviarse a cada encargado de fiscalía para que llene con 0 y 1 las columnas pertinentes, luego se condensa en un solo archivo y se envía de vuelta
 		Dice el Lic Jesús que en realidad debería enviárnoslo tres veces por semana, pero dado que somos lentos para responder solo lo hace una vez.
 
 Fin de mes:
 	Oficio - Actualización de medidas cautelares/órdenes de protección
-		La solicitud llega mediante un oficio a fin de mes
+		La solicitud llega mediante un oficio a fin de mes.
 		Parece ser el formato en General/Estadística 2024/INFORME MEDIDAS DE PROTECCION 2024/***** 2024/
 		Hay una versión más reciente en Archivo/INFORMES VIERNES A/INFORME MEDIDAS DE PROTECCION 2024/.../INFORMACIÓN MEDIDAS DE PROTECCIÓN AL *************.xlsx
 		Se reportan conteos de medidas de protección del artículo 137 del Código Nacional de Procedimientos Penales.

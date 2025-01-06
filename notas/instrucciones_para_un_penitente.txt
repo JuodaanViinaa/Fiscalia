@@ -1,18 +1,17 @@
 La fiscalía es incertidumbre. Si te sientes perdido, empatizo contigo porque también yo me siento así.
 Para saber qué hacer tienes que preguntar todo a todo mundo y tomar nota.
 Existe un chat de WhatsApp en el que están las personas a cargo de la estadística de distintos órganos (fiscalías y centros).
-Pide a Alberto que te una al chat de Enlace de estadísticos para tener acceso a los informes que produce cada fiscalía.
+Pide a Alberto que te una al chat de Enlaces de estadística para tener acceso a los informes que produce cada fiscalía.
 
 Hay varias fiscalías que son observadas por la coordinación. Sus siglas son:
-	FIDS: Fiscalía Central de Investigación para la Atención de Delitos  Sexuales
+	FIDS: Fiscalía de Investigación de Delitos  Sexuales
         FIDCANNA: Fiscalía de Investigación de Delitos Cometidos en Agravio de Niños, Niñas y Adolescentes
         FEIDF: Fiscalía  Especializada para la Investigación del Delito de Feminicidio
-        FIDMTP: Fiscalía Central de Investigación para la Atención del Delito de Trata de Personas
-        FIDVF: Fiscalía de Investigacion del delito de Violencia Familiar
+		Por el momento la FEIDF no tiene un estadístico a cargo, por lo que es difícil acceder a sus datos.
+        FIDMTP: Fiscalía de Investigación para de Delitos en Materia de Trata de Personas
+        FIDVF: Fiscalía de Investigacion del Delito de Violencia Familiar
         FIDAGAP: Fiscalía de Investigación de Delitos Cometidos en Agravio de Grupos de Atención Prioritaria
         FJPA: Fiscalía de Justicia Penal para Adolescentes
-
-	Por el momento la FEIDF no tiene un estadístico a cargo, por lo que es difícil acceder a sus datos.
 
 Además de las fiscalías hay otros órganos:
 	CJM: Centros de Justicia para Mujeres
@@ -38,12 +37,14 @@ Semanales:
 		Reporte de productividades de violación
 			Alberto te hace llegar un archivo que contiene conteos de determinaciones de carpetas del delito de violación
 			Tu labor es crear 4 gráficas para mostrar la productividad de cada área.
+			Se puede crear automáticamente mediante Python. Las instrucciones están en un archivo de texto aparte.
 		Reporte de productividades de delitos contra la intimidad
 			Exactamente lo mismo que en violación, pero para un delito distinto.
 Mensuales:
 	Fin de mes:
 		Actualización de medidas cautelares/órdenes de aprehensión
 			La solicitud llega mediante un oficio a finales del mes.
+			Más detalles en el archivo de informes_recurrentes.
 	Mediados de mes:
 		Anexo estadístico (actualizar cuadros del mes anterior)
 			Mediante un oficio se pide actualizar la información de varios cuadros (17, 18, 19, 20, 21, y 23), pero no se te dice cómo, cuáles cuadros son esos, qué formato tienen, o de dónde sacar la información.

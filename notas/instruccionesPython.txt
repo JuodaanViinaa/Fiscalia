@@ -1,8 +1,8 @@
-Para utilizar la automatización de Python se requiere como requisito:
+Para utilizar las automatizaciones de Python se requiere como requisito:
     1. Instalar python en la computadora que se utilizará
     2. Instalar las librerías adecuadas
     3. Tener los archivos del código descargados
-    4. Tener los archivos por analizar en una carpeta que lleve por nombre la fecha del día en formato aaaammdd, e.g., 20241230
+    4. Tener los archivos por analizar disponibles en tu computadora, en la carpeta que espera el código de Python
     5. Adaptar la ruta de los archivos en el código
 
 1 - Instalar Python
@@ -13,17 +13,20 @@ Para facilitar el trabajo recomiendo descargar un editor específico para python
     Con eso se creará una carpeta llamada PycharmProjects en el sistema, y dentro de ella una segunda carpeta con el nombre de nuestro proyecto recién creado.
     
 2 - Instalar las librerías adecuadas
-Las librerías necesarias son pandas, Numpy, Openpyxl, matplotlib, y python-pptx.
+Las librerías necesarias son: pandas, Numpy, Openpyxl, matplotlib, y python-pptx.
 Para instalarlas desde Pycharm podemos ir a la parte inferior izquierda de la pantalla y buscar un icono que parecen tres cuadros apilados. Al flotar sobre él con el mouse debería mostrar el texto "Paquetes" o "Packages". Si hacemos clic en él abrirá un cuadro en el que podemos buscar librerías por nombre. Buscaremos cada una de las librerías mencionadas e instalaremos la versión más reciente de ellas.
 
 3 - Conseguir el código
-El código necesario está en el Teams, en la sección de Informes, en una carpeta llamada "AutomatizacionesPython". Para importarlo al proyecto solamente hay que copiar las tres carpetas que contiene (las carpetas completas, no los archivos individuales) hacia la carpeta en donde está guardado el proyecto de Pycharm.
+El código necesario está en el Teams, en la sección de Informes, en una carpeta llamada "AutomatizacionesPython". Para importarlo al proyecto solamente hay que copiar las tres carpetas que contiene (las carpetas completas, no los archivos individuales) hacia la carpeta en donde está guardado el proyecto de Pycharm (PycharmProjects/Tu_Proyecto).
 
 4 - Conseguir los archivos para analizar
-Los archivos llegan diariamente por la tarde/noche (lo más tarde que han llegado para mí ha sido incluso después de las 9 pm) por correo a estadistica.cgidgav@gmail.com
+Los archivos del informe ejecutivo llegan diariamente por la tarde/noche (lo más tarde que han llegado para mí ha sido incluso después de las 9 pm) por correo a estadistica.cgidgav@gmail.com
 Probablemente tendrás acceso a la cuenta de correo, o Alberto te reenviará los archivos.
 La manera más eficiente que encontré de obtenerlos es con Power Automate. Puedes crear una regla en gmail para reenviar todos los correos recibidos a una dirección distinta, y luego crear un flujo simple de Power Automate que te permita descargar todos los archivos adjuntos de los correos sin leer y pegarlos en una carpeta de One Drive. Así, para obtener los archivos necesitas solo descargar un único archivo .zip desde One Drive y no 22 archivos desde 10 correos distintos en gmail.
-Una vez que tengas todos los archivos del día (yo hago un corte a las 8:30 pm y solo incluyo en el informe lo que llegue antes de esa hora) los debes meter todos en una carpeta que lleve por nombre la fecha en formato aaaammdd, y esa carpeta completa debes meterla en la carpeta donde está el proyecto de Pycharm, en la subcarpeta de InformeEjecutivo.
+Una vez que tengas todos los archivos del día (yo hago un corte a las 8:30 pm y solo incluyo en el informe lo que llegue antes de esa hora) los debes meter todos en una carpeta que lleve por nombre la fecha en formato aaaammdd, y esa carpeta completa debes meterla en la carpeta donde está el proyecto de Pycharm, en la subcarpeta de InformeEjecutivo. Entonces debe resultar algo como "PycharmProjects/TuProyecto/informeEjecutivo/20243012/", y dentro de esa carpeta estarán todos los archivos recibidos por correo.
+
+En el caso de los informes de violaciones y DCIS, los archivos te los entregará Alberto o el Ingeniero Sergio blanco de la FIDS. Son dos archivos de Excel.
+Cada uno se debe colocar en la carpeta del proyecto particular para ese informe: el de violaciones en InformeViolaciones, y el de DCIS en InformeDCIS.
 
 5 - Adaptar la ruta de los archivos
 En Pycharm puedes abrir los archivos con formato .py que descargaste en el paso número 3. Ese es el código de las automatizaciones.
@@ -65,4 +68,5 @@ A veces los encargados de cada fiscalía hacen cosas raras que pueden hacer que 
     Muy ocasionalmente envían los archivos desde una dirección de correo distinta de la usual, y gmail los puede detectar como spam. Si sospechas que te faltan archivos, revisa la carpeta de spam.
     En cuanto al informe ejecutivo, si el código comienza a correr pero se detiene a la mitad, revisa lo que está escrito en la consola de resultados. Ahí te indica hasta qué punto del análisis llegó y en qué punto falló. Un fallo que ha sucedido es que, al llegar al archivo de alguna Fiscalía en particular, el análisis falla porque no se encuentra la columna adecuada. Lo que puede estar sucediendo es que le hayan cambiado el nombre a la columna (por ejemplo, en lugar de "TOTAL" pueden ponerle otro nombre por accidente).
 
-    Sobre los informes de violaciones y DCIS, revisa que se estén analizando los datos del mes correcto. El código lee las filas desde abajo hacia arriba tomando los últimos 13 meses y saltándose 1 fila para Violación y 2 filas para DCIS (porque en los archivos hay 1 y 2 filas vacías al final de los datos). Si acaso eso llega a cambiar, habrá que modificar el código. No ha sucedido nunca, pero es bueno estar alerta y revisar siempre.
+    Sobre los informes de violaciones y DCIS, revisa que se estén analizando los datos del mes correcto. El código lee las filas desde abajo hacia arriba tomando los últimos 13 meses y saltándose 1 fila para Violación y 2 filas para DCIS (porque en los archivos hay 1 y 2 filas vacías al final de los datos). Si acaso eso llega a cambiar, habrá que modificar el código. El cambio sería necesario en la fila 23, en donde dice "ult_12_meses = datos.iloc[-15:-1]". El código actual lee desde la decimoquinta fila contando desde el final hacia atrás hasta la segunda fila desde el final en el caso de Violaciones, y desde la decimosexta a la tercera desde el final en el caso de DCIS.
+    Nunca han cambiado ese formato, pero es bueno estar alerta y revisar siempre.
