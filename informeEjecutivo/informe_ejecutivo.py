@@ -111,8 +111,8 @@ def informe_ejecutivo(dir_path, template):
 
     summ_wb = load_workbook(f'{template}')
     # Se separan las celdas unidas de la hoja de Acciones
-    summ_wb["Acciones"].unmerge_cells(start_row=1, start_column=1, end_row=3, end_column=9)
-    summ_wb["Acciones"].unmerge_cells(start_row=4, start_column=1, end_row=4, end_column=9)
+    # summ_wb["Acciones"].unmerge_cells(start_row=1, start_column=1, end_row=3, end_column=9)
+    # summ_wb["Acciones"].unmerge_cells(start_row=4, start_column=1, end_row=4, end_column=9)
     for fiscalia in file_list:
         wb = load_workbook(f'{dir_path}{file_dict[fiscalia]}', data_only=True)
         print(f'Trabajando en {fiscalia}')
@@ -211,13 +211,13 @@ def informe_ejecutivo(dir_path, template):
                     column_summ = cell.column
                     break
                 break
-        for cell in wb["Audiencias"]["A"]:
-            if cell.value == "Audiencia de prórroga del plazo de cierre de complenetaria ":
-                cell.value = "Audiencia de prórroga del plazo de cierre de complementaria "
-            elif cell.value == "Audiencia Inicial sin detenido":
-                cell.value = "Audiencia inicial sin detenido "
-            elif cell.value == "Audiencia de Actos de InvestIgación":
-                cell.value = "Audiencia de solicitud de actos de investigación"
+        # for cell in wb["Audiencias"]["A"]:
+        #     if cell.value == "Audiencia de prórroga del plazo de cierre de complenetaria ":
+        #         cell.value = "Audiencia de prórroga del plazo de cierre de complementaria "
+        #     elif cell.value == "Audiencia Inicial sin detenido":
+        #         cell.value = "Audiencia inicial sin detenido "
+        #     elif cell.value == "Audiencia de Actos de InvestIgación":
+        #         cell.value = "Audiencia de solicitud de actos de investigación"
         for index, cell in enumerate(summ_wb["Audiencias"]["A"]):
             for index2, cell2 in enumerate(wb["Audiencias"]["A"]):
                 if cell.value == cell2.value and cell.row > 1 and cell2.value not in divisiones:
