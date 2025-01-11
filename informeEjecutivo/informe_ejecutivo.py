@@ -126,7 +126,7 @@ def informe_ejecutivo(dir_path, template):
                     column_fisc = cell.column
                     break
                 break
-        for col in summ_wb["Acciones"].iter_cols(min_row=6, max_row=6):
+        for col in summ_wb["Acciones"].iter_cols(min_row=2, max_row=2):
             for cell in col:
                 if cell.value == fiscalia:
                     column_summ = cell.column
