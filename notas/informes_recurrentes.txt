@@ -62,4 +62,7 @@ Trimestral (Cortes al 31 de Marzo, 30 de Junio, 30 de Septiembre, 31 de Diciembr
 	Oficio - "MES": Actualización de diez indicadores estratégicos del modelo de evaluación y seguimiento de la consolidación del sistema de justicia penal.
 		Se actualiza con un formato llenado por cada fiscalía encontrado en el Teams en Archivo/MES 2024. Hay un instructivo en pdf dentro de MES CGIDGAV 2024 2T
 		Las bases de datos para el trimestre de octubre-diciembre del año anterior están en el Teams, en Archivo/CARPETA MONI/ARCHIVOS ESTADISTICA 2023/INFORME (MES) AL 31 DE DICIEMBRE 2023
+	Oficio - Actualización de información pública trimestral. Formatos de los artículos 121 Fracción XXXII y 123 fracciones IX y X.
+		Se actualizan dos formatos llenados por la fiscalía de Feminicidio. Son provistos junto con el oficio. Piden conteos de carpetas de investigación iniciadas y determinadas, averiguaciones previas determinadas, y órdenes (solicitadas, concedidas y cumplidas) para cada trimestre.
+		La forma en que lo llené fue pidiendo ayuda a la particular de la Fiscal de Feminicidio. En una reunión los encargados de cada agencia proveyeron sus datos, y el condensado me fue entregado.
 
