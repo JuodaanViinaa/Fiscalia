@@ -43,7 +43,7 @@ Fin de mes:
 Mediados del mes siguiente:
 	Oficio - Anexo estadístico
 		La solicitud llega a mediados del mes siguiente. Se pide actualizar la información de seis cuadros.
-		La manera de llenarlo es pidiendo ayuda a cada Fiscalía: el archivo del mes anterior se hace llegar a los encargados de cada fiscalía mediante el chat de whatsapp, y cada uno se encarga de llenar las columnas pertinentes. Se encuentra en el Teams en Archivo/ANEXO ESTADISTICO 2024/
+		La manera de llenarlo es pidiendo ayuda a cada Fiscalía: el archivo del mes anterior se hace llegar a los encargados de cada fiscalía mediante el chat de whatsapp, y cada uno se encarga de llenar las columnas pertinentes. El histórico se encuentra en el Teams en Archivo/ANEXO ESTADISTICO 2024/
 		La distribución de cuadros a cada Fiscalía es la siguiente:
 		Cuadro 17 - Informa: CETNN; Refugio Especializado para Mujeres, Niñas y Niños Víctimas del Delito de Trata de Personas
 		Cuadro 18 - Informa: CJM
@@ -56,12 +56,14 @@ Mediados del mes siguiente:
 				FJPA: Todo
 				FIDAGAP: Lesiones dolosas
 				FIDS: Delitos sexuales
-		Se entrega un oficio y un CD en el 5o piso del Bunker, al ingeniero Oscar Martínez Vázquez. Se envía por correo a jorge_oliveros@fgjcdmx.gob.mx
+		Se entrega un oficio y un CD en el 5o piso del Bunker al ingeniero Oscar Martínez Vázquez. Se envía por correo a jorge_oliveros@fgjcdmx.gob.mx
 
 Trimestral (Cortes al 31 de Marzo, 30 de Junio, 30 de Septiembre, 31 de Diciembre)
 	Oficio - "MES": Actualización de diez indicadores estratégicos del modelo de evaluación y seguimiento de la consolidación del sistema de justicia penal.
 		Se actualiza con un formato llenado por cada fiscalía encontrado en el Teams en Archivo/MES 2024. Hay un instructivo en pdf dentro de MES CGIDGAV 2024 2T
 		Las bases de datos para el trimestre de octubre-diciembre del año anterior están en el Teams, en Archivo/CARPETA MONI/ARCHIVOS ESTADISTICA 2023/INFORME (MES) AL 31 DE DICIEMBRE 2023
+		La manera de llenarlo es pidiendo ayuda a los encargados de cada fiscalía: se les envían los documentos recibidos de Jorge Oliveros y ellos se encargan de llenar, para cada archivo, la actualización. Por lo visto, se hace una actualización de las carpetas judicializadas en cada trimestre del año actual que hayan sido iniciadas en años anteriores. Por eso hay archivos para cada año desde 2017.
+
 	Oficio - Actualización de información pública trimestral. Formatos de los artículos 121 Fracción XXXII y 123 fracciones IX y X.
 		Me parece que este llegó a nosotros debido a que no hay un encargado de estadística de FEIDF.
 		Se actualizan dos formatos llenados por la fiscalía de Feminicidio. Son provistos junto con el oficio. Piden conteos de carpetas de investigación iniciadas y determinadas, averiguaciones previas determinadas, y órdenes (solicitadas, concedidas y cumplidas) para cada mes del trimestre que recién termina.
