@@ -243,6 +243,7 @@ def informe_ejecutivo(dir_path, template):
         for row in range(19, 29):
             for col in ["B", "C", "D", "E", "F"]:
                 summ_wb["CJM"][f'{col}{row}'].value = values2.pop(0)
+        summ_wb.save(f'{dir_path}{datetime.datetime.now().strftime("%Y%m%d")} INFORME EJECUTIVO DIARIO CGIDGAV.xlsx')
         print("CJM Terminado")
     except:
         print("CJM no encontrado")
