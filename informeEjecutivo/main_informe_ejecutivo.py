@@ -1,6 +1,7 @@
 from organizador import organizar
 from informe_ejecutivo import informe_ejecutivo
 from audiencias import audiencias
+from ordenes import ordenes
 from enviar_correo import enviar_mensaje
 import datetime
 
@@ -16,3 +17,4 @@ path = f'/home/daniel/PycharmProjects/Fiscalia/informeEjecutivo/'
 organizar(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/')
 informe_ejecutivo(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Informe diario/', f'{path}/Formato_informe.xlsx')
 audiencias(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Audiencias/', f'{path}/Formato_audiencias.xlsx')
+ordenes(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Ordenes/', f'{path}/Formato_ordenes.xlsx')
