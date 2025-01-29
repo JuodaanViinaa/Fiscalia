@@ -116,6 +116,14 @@ def informe_ejecutivo(dir_path, template):
     for fiscalia in file_list:
         wb = load_workbook(f'{dir_path}{file_dict[fiscalia]}', data_only=True)
         print(f'Trabajando en {fiscalia}')
+        # Se revisa que todas las hojas esten nombradas en TitleCase
+        # Si no lo estan, se renombran temporalmente a un numero y luego a TitleCase
+        sheetnames = wb.sheetnames
+        titlecase_sheets = [sheet.title() for sheet in sheetnames]
+        for i, sheet in enumerate(wb.worksheets):
+            sheet.title = f"{i}"
+            sheet.title = titlecase_sheets[i]
+
 
         # Acciones
         column_fisc = None
@@ -142,24 +150,24 @@ def informe_ejecutivo(dir_path, template):
         # Medidas de protección
         column_fisc = None
         column_summ = None
-        for col in wb["Medidas de Protección"].iter_cols(1):
+        for col in wb["Medidas De Protección"].iter_cols(1):
             for cell in col:
                 if cell.value in ["TOTAL", "FJPA", "FIDMTP", "FIDMT", "FIDAGAP", "FEIDF"]:
                     column_fisc = cell.column
                     break
                 break
-        for row in summ_wb["Medidas de Protección"].iter_rows(min_row=1, max_row=1):
+        for row in summ_wb["Medidas De Protección"].iter_rows(min_row=1, max_row=1):
             for cell in row:
                 if cell.value == fiscalia:
                     column_summ = cell.column
                     break
                 # break  # ¿Es necesario este break? Ponerlo rompe el código, pero antes no lo hacía
-        for index, cell in enumerate(summ_wb["Medidas de Protección"]["A"]):
-            for index2, cell2 in enumerate(wb["Medidas de Protección"]["A"]):
+        for index, cell in enumerate(summ_wb["Medidas De Protección"]["A"]):
+            for index2, cell2 in enumerate(wb["Medidas De Protección"]["A"]):
                 if cell.value == cell2.value and cell.value != "ACCIONES":
-                    summ_wb["Medidas de Protección"][f'{get_column_letter(column_summ)}{index + 1}'].value = wb["Medidas de Protección"][f'{get_column_letter(column_fisc)}{index2 + 1}'].value
+                    summ_wb["Medidas De Protección"][f'{get_column_letter(column_summ)}{index + 1}'].value = wb["Medidas De Protección"][f'{get_column_letter(column_fisc)}{index2 + 1}'].value
                     break
-        print("    Medidas de Protección terminado")
+        print("    Medidas De Protección terminado")
 
         # Concentrado
         row_fisc = None

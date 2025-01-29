@@ -12,10 +12,6 @@ def organizar(path):
     except:
         print("Audiencias ya existe")
     try:
-        os.mkdir(f'{path}Ordenes')
-    except:
-        print("Ordenes ya existe")
-    try:
         os.mkdir(f'{path}Cateos')
     except:
         print("Cateos ya existe")
@@ -38,8 +34,6 @@ def organizar(path):
             os.rename(f'{path}{file}', f'{path}Otras/{file}')
         elif "audiencia" in file.lower() or "formato informe concentrado" in file.lower():
             os.rename(f'{path}{file}', f'{path}Audiencias/{file}')
-        elif "orden" in file.lower():
-            os.rename(f'{path}{file}', f'{path}Ordenes/{file}')
         elif "cateo" in file.lower():
             os.rename(f'{path}{file}', f'{path}Cateos/{file}')
         elif "medidas" in file.lower():
