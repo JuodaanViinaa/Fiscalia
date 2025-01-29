@@ -14,7 +14,8 @@ import datetime
 # Despues comentar "informe_ejecutivo" y descomentar "audiencias". Eso hace el reporte de audiencias.
 
 path = f'/home/daniel/PycharmProjects/Fiscalia/informeEjecutivo/'
-# organizar(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/')
-# informe_ejecutivo(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Informe diario/', f'{path}/Formato_informe.xlsx')
-# audiencias(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Audiencias/', f'{path}/Formato_audiencias.xlsx')
+organizar(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/')
+informe_ejecutivo(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Informe diario/', f'{path}/Formato_informe.xlsx')
+audiencias(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Audiencias/', f'{path}/Formato_audiencias.xlsx')
 ordenes(f'{path}/{datetime.date.today().strftime("%Y%m%d")}/Ordenes/', f'{path}/Formato_ordenes.xlsx')
+enviar_mensaje("maldonadodaniel96@outlook.com")
