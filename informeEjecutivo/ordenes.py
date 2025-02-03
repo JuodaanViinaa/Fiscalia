@@ -20,9 +20,7 @@ def ordenes(path, template):
         sheet = wb.active
         for row in sheet.iter_rows(min_row=10):
             row_list = [cell.value for cell in row]
-            print(row_list)
             novedad_indicator = [True if "novedad" in str(cell).lower() else False for cell in row_list]
-            print(novedad_indicator)
             if row_list[1] is None:
                 space_counter += 1
                 if space_counter >= 10:
@@ -34,7 +32,6 @@ def ordenes(path, template):
             # elif "novedad" not in str(row_list[0]).lower and "novedad" not in str(row_list[1]).lower:
             else:
                 master_list.append(row_list)
-        print(master_list)
 
     summ_wb = load_workbook(f'{template}')
     summ_sheet = summ_wb.active
