@@ -79,12 +79,17 @@ def informe_ejecutivo(dir_path, template):
     if len(fiscalias_faltantes) > 0:
             for file in archivos_sobrantes:
                 wb = load_workbook(f'{dir_path}{file}')
+                sheetnames = wb.sheetnames
+                titlecase_sheets = [sheet.title() for sheet in sheetnames]
+                for i, sheet in enumerate(wb.worksheets):
+                    sheet.title = f"{i}"
+                    sheet.title = titlecase_sheets[i]
                 try:
                     if "AS Y ADOLESCENTES" in str(wb["Concentrado"]["A1"].value):
                         file_dict["FIDCANNA"] = file
                     elif "TRATA DE PERSONAS" in str(wb["Concentrado"]["A1"].value):
                         file_dict["FIDMTP"] = file
-                    elif "AGENCIA 75" in str(wb["Acciones"]["B1"].value):
+                    elif "75" in str(wb["Acciones"]["B1"].value):
                         file_dict["FIDVF"] = file
                     elif "FJPA" in str(wb["Acciones"]["B1"].value):
                         file_dict["FJPA"] = file
